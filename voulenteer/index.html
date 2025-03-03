@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Connect - Volunteer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <i class="fas fa-heart"></i>
+          <span>Community Connect</span>
+        </a>
+      </div>
+      
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="volunteer.html" class="active"><i class="fas fa-heart"></i> Volunteer</a>
+      </div>
+      
+      <div class="navbar-toggle" id="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">Volunteer Opportunities</h1>
+      
+      <!-- 1. Scrollable Information Section -->
+      <section class="volunteer-programs">
+        <div class="section-header">
+          <h2>Available Programs</h2>
+          
+          <!-- Dropdown for Sorting/Filtering -->
+          <div class="dropdown">
+            <div class="dropdown-toggle">
+              <i class="fas fa-filter"></i>
+              <span>Most Popular</span>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-item">Most Popular</div>
+              <div class="dropdown-item">Newest</div>
+              <div class="dropdown-item">Upcoming</div>
+              <div class="dropdown-item">Location</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Scrollable Cards Container -->
+        <div class="program-cards">
+          <!-- Card 1 -->
+          <div class="program-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1593113598332-cd59c5a3ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Community Garden">
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag tag-environment">Environment</span>
+                <span class="spots-left"><i class="fas fa-users"></i> 15 spots left</span>
+              </div>
+              <h3>Community Garden Project</h3>
+              <p>Help maintain and grow our community garden, providing fresh produce for local food banks.</p>
+              
+              <div class="card-details">
+                <span><i class="fas fa-calendar"></i> Every Saturday</span>
+                <span><i class="fas fa-clock"></i> 9:00 AM - 12:00 PM</span>
+                <span><i class="fas fa-map-marker-alt"></i> Downtown</span>
+              </div>
+              
+              <div class="card-actions">
+                <button class="btn btn-primary">Sign Up</button>
+                <button class="btn btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="program-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Food Bank">
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag tag-food">Food Security</span>
+                <span class="spots-left"><i class="fas fa-users"></i> 8 spots left</span>
+              </div>
+              <h3>Food Bank Distribution</h3>
+              <p>Sort and distribute food packages to families in need at our local food bank.</p>
+              
+              <div class="card-details">
+                <span><i class="fas fa-calendar"></i> Tuesdays & Thursdays</span>
+                <span><i class="fas fa-clock"></i> 4:00 PM - 7:00 PM</span>
+                <span><i class="fas fa-map-marker-alt"></i> Eastside</span>
+              </div>
+              
+              <div class="card-actions">
+                <button class="btn btn-primary">Sign Up</button>
+                <button class="btn btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="program-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Literacy Program">
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag tag-education">Education</span>
+                <span class="spots-left"><i class="fas fa-users"></i> 12 spots left</span>
+              </div>
+              <h3>Adult Literacy Program</h3>
+              <p>Help adults improve their reading and writing skills through our literacy program.</p>
+              
+              <div class="card-details">
+                <span><i class="fas fa-calendar"></i> Monday & Wednesday</span>
+                <span><i class="fas fa-clock"></i> 6:00 PM - 8:00 PM</span>
+                <span><i class="fas fa-map-marker-alt"></i> Community Center</span>
+              </div>
+              
+              <div class="card-actions">
+                <button class="btn btn-primary">Sign Up</button>
+                <button class="btn btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="program-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1536122985607-4fe00b283652?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beach Cleanup">
+            </div>
+            <div class="card-content">
+              <div class="card-tags">
+                <span class="tag tag-environment">Environment</span>
+                <span class="spots-left"><i class="fas fa-users"></i> 25 spots left</span>
+              </div>
+              <h3>Beach Cleanup Initiative</h3>
+              <p>Join our monthly beach cleanup to help protect marine life and keep our shores beautiful.</p>
+              
+              <div class="card-details">
+                <span><i class="fas fa-calendar"></i> First Saturday of Month</span>
+                <span><i class="fas fa-clock"></i> 8:00 AM - 11:00 AM</span>
+                <span><i class="fas fa-map-marker-alt"></i> Coastal Beach</span>
+              </div>
+              
+              <div class="card-actions">
+                <button class="btn btn-primary">Sign Up</button>
+                <button class="btn btn-secondary">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 2. User Ratings and Reviews Section -->
+      <section class="reviews-section">
+        <h2>Volunteer Reviews</h2>
+        
+        <!-- Overall Rating Summary -->
+        <div class="rating-summary">
+          <div class="rating-number">9.4</div>
+          <div class="rating-details">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="rating-text">Exceptional</p>
+            <p class="rating-count">Based on 128 reviews</p>
+          </div>
+        </div>
+        
+        <!-- Individual Reviews -->
+        <div class="reviews">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Life-changing experience</h3>
+            </div>
+            <p class="review-text">
+              Volunteering at the community garden was one of the most rewarding experiences I've had. The team was welcoming and I learned so much about sustainable gardening practices...
+              <a href="#" class="see-more">See More</a>
+            </p>
+            <div class="review-meta">
+              <span class="reviewer-name">Sarah J.</span>
+              <span class="review-date">March 15, 2025</span>
+            </div>
+          </div>
+          
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h3>Great community impact</h3>
+            </div>
+            <p class="review-text">
+              The food bank distribution program is incredibly well-organized. I could see the direct impact of our work on the families we served. The only downside was the limited parking at the facility...
+              <a href="#" class="see-more">See More</a>
+            </p>
+            <div class="review-meta">
+              <span class="reviewer-name">Michael T.</span>
+              <span class="review-date">February 28, 2025</span>
+            </div>
+          </div>
+          
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3>Highly recommend</h3>
+            </div>
+            <p class="review-text">
+              The beach cleanup initiative was both fun and meaningful. It was well-organized, and the staff provided all the necessary equipment. I met some amazing people and felt like I made a real difference...
+              <a href="#" class="see-more">See More</a>
+            </p>
+            <div class="review-meta">
+              <span class="reviewer-name">David L.</span>
+              <span class="review-date">April 2, 2025</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 3. Feedback Form -->
+      <section class="feedback-section">
+        <h2>Share Your Experience</h2>
+        
+        <!-- Rating Input -->
+        <div class="rating-input">
+          <p>Rate your volunteer experience:</p>
+          <div class="star-rating">
+            <span class="far" data-rating="1">😞</span>
+            <span class="far" data-rating="2">😐</span>
+            <span class="far" data-rating="3">😊</span>
+            <span class="far" data-rating="4">😁</span>
+            <span class="far" data-rating="5">😍</span>
+          </div>
+        </div>
+        
+        <!-- Text Area -->
+        <div class="feedback-textarea">
+          <textarea placeholder="Write your review here... Share what you liked, what could be improved, and any tips for future volunteers."></textarea>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="feedback-actions">
+          <button class="btn btn-primary">Submit Feedback</button>
+          <button class="btn btn-cancel">Cancel</button>
+        </div>
+      </section>
+    </div>
+  </main>
+ <!-- Go to Top Button -->
+ <button id="goTopBtn" class="go-top-btn">↑ Top</button>
+
+ <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><i class="fas fa-heart"></i> Community Connect</h3>
+          <p>Making a difference through community service and volunteer opportunities.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Volunteer St, City, Country</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@communityconnect.org</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Community Connect. All rights reserved.</p>
+        <p><a href="/student1-editor">Student 1 Editor</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
