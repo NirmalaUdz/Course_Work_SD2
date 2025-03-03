@@ -1,0 +1,200 @@
+:root {
+  --primary-color: #0077be;
+  --secondary-color: #00a8e8;
+  --text-color: #333;
+  --light-bg: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/* Splash Screen Styles */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1468581264429-2548ef9eb732?auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  pointer-events: none;
+  animation: rippleEffect 1s linear;
+}
+
+.splash-content {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  background: rgba(0, 119, 190, 0.8);
+  border-radius: 15px;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.splash-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mission {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.team-members {
+  margin-bottom: 2rem;
+}
+
+.team-members h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.team-members ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.team-members li {
+  font-size: 1.1rem;
+}
+
+.loader {
+  margin-top: 2rem;
+  position: relative;
+  height: 60px;
+}
+
+.water-drop {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(45deg);
+  position: relative;
+  margin: 0 auto;
+  animation: dropFall 1.2s ease-in infinite;
+}
+
+.ripple {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  animation: rippleEffect 1.2s ease-out infinite;
+}
+
+@keyframes dropFall {
+  0% {
+    transform: rotate(45deg) translateY(-50px);
+    opacity: 1;
+  }
+  70% {
+    transform: rotate(45deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translateY(0) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes rippleEffect {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+#main-content {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .splash-content h1 {
+    font-size: 2rem;
+  }
+
+  .mission {
+    font-size: 1rem;
+  }
+
+  .team-members ul {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
