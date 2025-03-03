@@ -1,50 +1,88 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  margin: 0;
 }
 .navbar {
-    background-color: #5483B3;
-    overflow: hidden;
-    padding: 20px 0;
-
+  overflow: hidden;
+  background-color: #5483B3;
+  padding: 20px 10px;
 }
-.nav-btn {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 2px 10px;
-    text-decoration: none;
+.navbar-left a{
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  float: left;
+  line-height: 20px;
+  border-radius: 5px;
 }
 .logo-img {
-    font-size: 25px;
-    font-weight: bold;
+  margin-left: 10px;
+  margin-top: -5px;
+  float: left;
 }
-
-.nav-btn:hover {
-    color: black;
-    border-bottom: 3px solid #ffffff;
-    border-radius: 2px;
-    padding: 0px 10px;
+.navbar-left a:hover {
+  background-color: #C1E8FF;
+  color: rgb(0, 0, 0);
 }
 .navbar a.active {
-    background-color: #4CAF50;
-    color: white;
+  background-color: darkblue;
+  color: white;
 }
 .navbar-right {
-    float: right;
+  float: right;
+}
+.navbar-left {
+  float: left;
+}
+.sign-img {
+  width: 25px; 
+  margin-top: 0px;
+}
+@media screen and (max-width: 752px) {
+  .navbar a {
+    padding: 5px;
+    font-size: 13px;
+    
+  }
+  .navbar-left {
+    float: none;
+    margin-top: 10px;
+    padding-left:120px;
+  }
+  .sign-img {
+    width: 15px;
+  }
+  .logo-img {
+    width: 60px;
+    position: relative;
+    
+  }
 }
 
-@media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .navbar-right {
-      float: none;
-    }
+@media screen and (max-width: 614px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
   }
+  .navbar-left {
+    padding-left: 0px;
+  }
+  
+  .header-right {
+    float: none;
+  }
+  .logo-img {
+    display: block;
+    margin: auto;
+    float: none;
+    
+  }
+  .sign-img {
+    width: 20px;
+    display: block;
+    margin: auto;;
+  }
+
+}
