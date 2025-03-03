@@ -3,7 +3,7 @@ body {
 }
 .navbar {
   overflow: hidden;
-  background-color: #5483B3;
+  background-color: #052659;
   padding: 20px 10px;
 }
 .navbar-left a{
@@ -14,18 +14,21 @@ body {
   float: left;
   line-height: 20px;
   border-radius: 5px;
+  font-family: "gravita-geo-variable", sans-serif;
+  font-variation-settings: "wght" 550;
 }
 .logo-img {
   margin-left: 10px;
   margin-top: -5px;
   float: left;
+  padding-right: 25px;
 }
 .navbar-left a:hover {
-  background-color: #C1E8FF;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
 .navbar a.active {
-  background-color: darkblue;
+  background-color: #5483b3;
   color: white;
 }
 .navbar-right {
@@ -38,7 +41,7 @@ body {
   width: 25px; 
   margin-top: 0px;
 }
-@media screen and (max-width: 752px) {
+@media screen and (max-width: 834px) {
   .navbar a {
     padding: 5px;
     font-size: 13px;
@@ -59,12 +62,13 @@ body {
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (max-width: 681px) {
   .navbar a {
     float: none;
     display: block;
     text-align: left;
     margin-top: 10px;
+    font-size: 16px;
   }
   .navbar-left {
     padding-left: 0px;
