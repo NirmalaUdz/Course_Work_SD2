@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-  --primary-color: #0d9488;
+  --primary-color: #052659;
   --primary-dark: #0f766e;
   --secondary-color: #f3f4f6;
   --text-color: #1f2937;
@@ -287,18 +287,18 @@ main {
 }
 
 .tag-environment {
-  background-color: #d1fae5;
-  color: #065f46;
+  background-color: #c1e8ff;
+  color: #052659;
 }
 
 .tag-food {
-  background-color: #dbeafe;
-  color: #1e40af;
+  background-color: #c1e8ff;
+  color: #052659;
 }
 
 .tag-education {
-  background-color: #ede9fe;
-  color: #5b21b6;
+  background-color: #c1e8ff;
+  color: #052659;
 }
 
 .spots-left {
@@ -499,6 +499,33 @@ main {
 .rating-input {
   margin-bottom: 1.5rem;
 }
+
+
+
+
+
+
+.rating {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.rating input:checked + label {
+  transform: scale(1.4);
+}
+
+
+
+
+
 
 .rating-input p {
   color: var(--text-color);
