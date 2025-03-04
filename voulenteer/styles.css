@@ -1,7 +1,7 @@
 /* Base Styles */
 :root {
   --primary-color: #052659;
-  --primary-dark: #0f766e;
+  --primary-dark: #7da0ca;
   --secondary-color: #f3f4f6;
   --text-color: #1f2937;
   --text-light: #6b7280;
@@ -402,11 +402,6 @@ main {
   font-weight: 700;
   color: var(--text-color);
   margin-right: 1rem;
-}
-
-.stars {
-  color: #fbbf24;
-  font-size: 1.25rem;
 }
 
 .rating-text {
