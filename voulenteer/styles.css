@@ -519,31 +519,6 @@ main {
 
 
 
-
-
-
-.rating-input p {
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-}
-
-.star-rating {
-  font-size: 2rem;
-  color: #d1d5db;
-  display: flex;
-}
-
-.star-rating i {
-  margin-right: 0.5rem;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.star-rating i:hover,
-.star-rating i.active {
-  color: #fbbf24;
-}
-
 .feedback-textarea {
   margin-bottom: 1.5rem;
 }
