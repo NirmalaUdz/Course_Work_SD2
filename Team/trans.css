@@ -1,0 +1,80 @@
+/* Team Members Section */
+#team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the team members horizontally */
+    gap: 15px; /* Add some space between the team members */
+    margin-top:50px;
+}
+
+.team-member {
+    width: 300px; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden; /* Clip content that overflows the rounded corners */
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+    transition: transform 0.9s ease; /* Smooth transition for hover effect */
+}
+
+.team-member:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+
+/* Thumbnail Container */
+.thumbnail-container {
+    position: relative; /* Needed for absolute positioning of the overlay */
+}
+
+.thumbnail-container img {
+    width: 100%;
+    height: auto;
+    display:block;/* Removes extra space below the image */
+    border-bottom: 1px solid #eee; /* Add a subtle line below the image */
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-container:hover img {
+    opacity: 0.7; /* Slightly fade the image on hover */
+}
+
+
+/* Initially hide the ENTIRE details box */
+.member-details {
+    visibility: hidden; /* Hide the box */
+    opacity: 0;        /* Make it fully transparent */
+    max-height: 0;     /* Collapse the height */
+    overflow: hidden;
+    transition: visibility 0s linear 0.5s, opacity 0.5s ease, max-height 0.5s ease; /*Transition opacity and max height*/
+}
+
+/*  Make visible ONLY for the hovered team member */
+.team-member:hover .member-details {
+    visibility: visible; /* Make the box visible */
+    opacity: 1;        /* Make it fully opaque */
+    max-height: 600px;   /* Expand the height */
+    transition:  opacity 0.9s ease, max-height 0.5s ease; /*Transition opacity and max height*/
+}
+
+* Member Details */
+.member-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.member-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.member-details p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+
+/* Accessibility focus style 
+    outline: 2px solid #007bff; /* Add a visible focus outline 
+}
+*/
