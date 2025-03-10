@@ -197,24 +197,11 @@ nav a:hover {
 }
 
 /* Images */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.image-caption {
-  font-size: 0.875rem;
-  color: #6b7280;
-  margin-top: 0.5rem;
-}
 
 .image-container {
   margin-bottom: 2rem;
   align-items: middle;
 }
-
 
 /* Solutions Section */
 .solutions-container {
