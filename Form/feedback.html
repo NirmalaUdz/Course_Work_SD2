@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="asset/css/GlobalStyles.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        .footer-link:hover {
+            color:#b0b4b9;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar" style="width: 100%;">
+        <a href="#default" class="logo-img">
+          <img src="asset/img/Logo-img-trs.png" alt="Logo" style="width:100px; height: 30px; margin-left: 10px;">
+        </a>
+        <div class="navbar-left">
+          <a href="#home">Get Involved</a>
+          <a href="#contact">Water & Sanitization</a>
+          <a href="#about">Projects </a>
+          <a href="#about">About Us</a>
+          <a href="#about">Contact Us</a>
+        </div>
+        <div class="navbar-right">
+          <a href="#about"><img class="sign-img" src="asset/img/profile.png" style="margin-right: 10px;"></a>
+        </div>
+      </nav>
+    <a id="top"></a>
+
+          
+    <main>
+        <form action="" method="POST"> <!--Action field is empty-->
+            <p style="color: rgba(0, 0, 0, 0.666);font-size: 25px; margin-top: 5px;"><b>We Appreciate Your Feedback</b></p>
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required maxlength="50">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Eg : sample@gmail.com" required title="Please enter a valid email address">
+
+                <label for="phone">Telephone Number:</label>
+                <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Eg : 070 250 1990" title="Please enter a valid phone number">
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback Details</legend>
+
+                <label for="water_sources">Which sources of water do you mainly use?</label>
+                <select id="water_sources" name="water_sources">
+
+                    <option value="" selected disabled>-- Please choose an option --</option>
+                    <option value="tap">Tap Water</option>
+                    <option value="filtered_water">Filtered water</option>
+                    <option value="bottled">Bottled Water</option>
+                    <option value="well">Well Water</option>
+                    <option value="river">River/Lake Water</option>
+                    <option value="rainwater">Rainwater</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="sanitation_issues">What sanitation issues do you face in your community?</label>
+                <select id="sanitation_issues" name="sanitation_issues" multiple size="2">
+
+                    <option value="lack_of_toilets">- Lack of proper toilets</option>
+                    <option value="poor_drainage">- Poor drainage systems</option>
+                    <option value="water_contamination">- Water contamination due to poor sanitation</option>
+                    <option value="waste_management">- Poor waste management</option>
+                    <option value="bad_odour">- Unpleasant odor from sewage</option>
+                    <option value="flooding">- Flooding due to poor drainage</option>
+                    <option value="mosquito_breeding">- Mosquito breeding due to stagnant water</option>
+                    <option value="other">- Other</option>
+                </select>
+
+
+                <label>Are you satisfied with the sanitation services in your area?</label> 
+
+                <div class="radio_group">
+                    <input type="radio" id="yes" name="yes_no" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="yes_no" value="no">
+                    <label for="no">No</label>
+                </div>
+
+
+                <label>What types of sanitation-related health issues are common in your area?</label>
+
+                <div class="checkbox_group">
+                    <input type="checkbox" id="diarrhea" name="sanitation_health_issues" value="diarrhea">
+                    <label for="diarrhea">Diarrhea</label><br>
+
+                    <input type="checkbox" id="cholera" name="sanitation_health_issues" value="cholera">
+                    <label for="cholera">Cholera</label><br>
+
+                    <input type="checkbox" id="malaria" name="sanitation_health_issues" value="malaria">
+                    <label for="malaria">Malaria</label><br>
+
+                    <input type="checkbox" id="dengue" name="sanitation_health_issues" value="dengue">
+                    <label for="dengue">Dengue fever</label><br>
+
+                    <input type="checkbox" id="typhoid" name="sanitation_health_issues" value="typhoid">
+                    <label for="typhoid">Typhoid fever</label><br>
+
+                    <input type="checkbox" id="skin_infections" name="sanitation_health_issues" value="skin_infections">
+                    <label for="skin_infections">Skin infections due to poor hygiene</label><br><br>
+                </div>
+
+                <label for="attachment">Have you noticed polluted water sources or unhygienic public sanitation facilities in your area? If yes, please upload a photo or document to report the issue :</label>
+                <input type="file" id="attachment" name="attachment"> 
+                
+                <label for="submission_datetime">Submission Date and Time:</label>
+                <input type="datetime-local" id="submission_datetime" name="submission_datetime">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Rating</legend>
+                <label>How satisfied are you with the government's efforts to improve sanitation?</label>
+                <div class="rating">
+                    <input type="radio" id="very_dissatisfied" name="emoji-rating" value="very_dissatisfied">
+                    <label for="very_dissatisfied">😡</label>
+            
+                    <input type="radio" id="dissatisfied" name="emoji-rating" value="dissatisfied">
+                    <label for="dissatisfied">🙁</label>
+            
+                    <input type="radio" id="neutral" name="emoji-rating" value="neutral">
+                    <label for="neutral">😐</label>
+            
+                    <input type="radio" id="satisfied" name="emoji-rating" value="satisfied">
+                    <label for="satisfied">🙂</label>
+            
+                    <input type="radio" id="very_satisfied" name="emoji-rating" value="very_satisfied">
+                    <label for="very_satisfied">😊</label>
+                </div>
+
+                <label for="comment">Comment: <span id="char_count"></span></label> <!--charcter count-->
+                <textarea id="comment" name="comment" rows="5" cols="50" maxlength="500"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+
+    <footer>
+        <a href="#">Link to 3-page editor</a> 
+    </footer>
+
+    <script>
+        const commentField = document.getElementById('comment');
+        const charCountSpan = document.getElementById('char_count');
+        const maxLength = commentField.getAttribute('maxlength');
+
+        commentField.addEventListener('input', function() {
+            const remainingChars = maxLength - this.value.length;
+            charCountSpan.textContent = `(${remainingChars} characters remaining)`;
+        });
+
+        // Initialize character count on page load
+        charCountSpan.textContent = `(${maxLength} characters remaining)`;
+
+    </script>
+
+    <footer class="footer" style="width: 100%;">
+        <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+            <img src="asset/img/Logo-img-trs.png" alt="Logo" style="height: 30px;margin-left: 30px;">
+            <p style="color: #d3d3d3; margin-left: 27px;">Safeguard Water for Future and Sustainable Solutions to earth and people</p>
+            </div>
+
+            <div class="footer-section">
+            <h3 style="margin-left: 40px;">Quick Links</h3>
+            <ul type="none"  class="footer-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a herf="#"><b>Volunteer</b></a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li>12/A Alfred Road, Colombo</li>
+                <li> +94-70 562 2256 </li>
+                <li>oceanaidinfo@12.lk</li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Community Connect. All rights reserved.</p>
+            <p> 2025 </p>
+        </div>
+        </div>
+    </footer> 
+
+</body>
+</html>
