@@ -1,12 +1,17 @@
+/*Font type for all body */
 body {
   margin: 0;
   font-family: "gravita-geo-variable", sans-serif;
 }
+
+/* Creating a Navigation bar  */
 .navbar {
   overflow: hidden;
   background-color: #052659;
   padding: 20px 10px;
 }
+
+/* Navigation bar links */
 .navbar-left a{
   color: white;
   padding: 8px;
@@ -18,30 +23,36 @@ body {
   font-family: "gravita-geo-variable", sans-serif;
   font-variation-settings: "wght" 550;
 }
+/* Navigation bar links hover */
+.navbar-left a:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* Navigation bar links active */
+.navbar a.active {
+  background-color: #5483b3;
+  color: white;
+}
+
+/* Navigation bar logo */
 .logo-img {
   margin-left: 10px;
   margin-top: -5px;
   float: left;
   padding-right: 25px;
 }
-.navbar-left a:hover {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-}
-.navbar a.active {
-  background-color: #5483b3;
-  color: white;
-}
+
+/* Navigation bar right option */
 .navbar-right {
   float: right;
 }
-.navbar-left {
-  float: left;
-}
+/*Sign in image */
 .sign-img {
   width: 25px; 
   margin-top: 0px;
 }
+/* Navigation bar responsive */
 @media screen and (max-width: 834px) {
   .navbar a {
     padding: 5px;
@@ -89,6 +100,7 @@ body {
     display: block;
     margin: auto;;
   }
+  
 
 }
 /* Footer */
@@ -97,23 +109,25 @@ body {
   color: var(--white);
   padding: 20px 0;
   font-family: "gravita-geo-variable", sans-serif;
+  
   font-variation-settings: "wght" 400;
 
 }
-
+/* Footer content in each */
 .footer-content {
   display: grid;
   gap: 2px;
   margin-bottom: 20px;
-  
+  margin-left: 80px;
 }
-
+/* Reesponsive footer */
 @media (min-width: 768px) {
   .footer-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Footer section header tag */
 .footer-section h3 {
   font-size: 20px;
   margin-bottom: 2px;
@@ -122,38 +136,39 @@ body {
   align-items: center;
   font-variation-settings: "wght" 550;
 }
-
+/* Footer section paragraph tag */
 .footer-section p {
   color: #ffffff;
 }
-
+/* Footer section ul tag */
 .footer-section ul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-
+/* Footer section ul anchor tag */
 .footer-section ul a {
   color: #d1d5db;
   transition: color 0.2s;
 }
-
+/* Footer section ul anchor tag hover */
 .footer-section ul a:hover {
   color: var(--white);
 }
-
+/* Footer section contact-info list tag */
 .contact-info li {
   display: flex;
   align-items: center;
   color: #d1d5db;
   margin-bottom: 0.5rem;
+  
 }
 
 .contact-info li i {
   margin-right: 0.5rem;
   width: 1rem;
 }
-
+/*Footer bottom copy right */
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;

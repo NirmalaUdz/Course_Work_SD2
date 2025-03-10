@@ -1,0 +1,42 @@
+/* CSS for the table in file */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+/*Table header TH and TD*/
+th, td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+/*Table header TH*/
+th {
+    background-color: #052659;
+    color: white;
+}
+/*Table row TR*/
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/*Table row TR hover*/
+tr:hover {
+    background-color: #ddd;
+}
+/*Table header text*/
+.header-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/*Button class*/
+.button {
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #052659;
+  }
+  
