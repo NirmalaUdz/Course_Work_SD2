@@ -1,24 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor Student - provide your student name</title>
-
+    <title>Page Editor Student - Nirmala Sooriyaarachchi</title>
+    <link rel="stylesheet" href="asset/css/GlobalStyles.css"> <!-- External CSS link -->
     <link rel="stylesheet" href="pageEditor_validator.css"> <!-- External CSS link -->
 
 </head>
-<body>
-    
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
 
-    <header id="top">
-        <h1>Replace the header with your teams' website header</h1>
-    </header>
+<body>
+
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <nav class="navbar">
+        <div>
+            <a class="logo-img">
+                <img src="asset/img/Logo-img-trs.png" alt="Logo" style="width:100px; height: 30px;">
+            </a>
+        </div>
+        <div class="navbar-left">
+            <a href="#home">Get Involved</a>
+            <a href="#contact">Water & Sanitization</a>
+            <a href="#about">Projects </a>
+            <a href="#about">About Us</a>
+            <a href="#about">Contact Us</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#about"><img class="sign-img" src="asset/img/profile.png"></a>
+        </div>
+    </nav>
+
 
     <section class="stud">
-        <h2>Student name, student role</h2>
+        <h2>Nirmala Sooriyaarachchi, Splash Screen & Volunteer page</h2>
     </section>
 
     <div class="container">
@@ -29,70 +44,128 @@
 
             <section>
                 <h2 id="splash">Splash Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-                    
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-                    
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                <h3>Technical Description</h3>
+                <p>The splash page is designed using a combination of HTML, CSS, and JavaScript to create an engaging
+                    and informative introduction to the website.</p>
+                <p>HTML Techniques:</p>
+                <p> <b>Tags:</b> Used to create containers for different sections of the splash screen, such as the
+                    splash
+                    content and loader.
+                    <li><b>h2 Tags:</b> for Usedheadings to provide a clear hierarchy of information.</li>
+                    <li><b>li Tags:</b> Used to list team members in a structured manner.</li>
+                    <li><b>button Tag:</b> Used to create an interactive button for the page editor.</li>
 
-                    <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                <p>CSS Techniques:</p>
+                <li><b>CSS Variables:</b> Defined using :root for consistent theming across the page (--primary-color,
+                    --secondary-color).</li>
+                <li><b>Global Styles:</b> Resets margins and paddings, sets box-sizing, and applies a default font and
+                    background color.</li>
+                <li><b>Ripple Effect:</b> Adds a ripple animation for visual effect.</li>
+                <li><b>Loader Animation:</b> Creates a water drop animation with a ripple effect.</li>
+                <li><b>Responsive Design</b> Adjusts styles for smaller screens to ensure the layout remains
+                    user-friendly.</li>
+
+                <p>JavaScript Techniques:</p>
+                <li><b>Initial Setup:</b> Sets the Splash Screen to display and hides the main content.</li>
+                <li><b>Mousemove event:</b> Creats ripple effect when mouse pointer is moving</li>
+                <li><b>Timeout Function</b> Fades out the splash screen after 4 seconds</li>
+
+                <h3>Accessibility</h3>
+                <p>Using of Alt Text for Images. Color contrast between the background and other details to ensure the
+                    proper readability. Animations and effects using java script </p>
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to
+                    jump to the corresponding section of the validation page.</p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
             </section>
 
             <section>
                 <h2 id="volunteer">Volunteer Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                <h3>Technical Description</h3>
+                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
+                    key tags and styling choices focusing on functionality and design without copying large code
+                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
+                    properties used to create structure and styling.</p>
 
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <h3>Accessibility</h3>
+                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker
+                    to jump to the corresponding section of the validation page.</p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+
+                <h3>Link to the page</h3>
+                <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
             </section>
 
             <section>
                 <h2 id="content">Content Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                <h3>Technical Description</h3>
+                <p><b>HTML Techniques:</b></p>
+                <p>The HTML structure uses semantic tags like header, nav, main, section, and footer to organize content
+                    logically and improve accessibility. Key elements include headings (h1, h2,h3), paragraphs (p),
+                    images (img with alt attributes), and lists (ul, li). These tags help create a well-structured,
+                    readable, and navigable document..</p>
 
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <p><b>CSS Techniques:</b></p>
+                <p>The CSS styles enhance the visual appeal and responsiveness of the page. Flexbox and Grid Layout are
+                    used for flexible and complex layouts, respectively. Typography is styled with font and color
+                    properties, while media queries ensure the design adapts to different screen sizes. Custom classes
+                    and properties like margin, padding, and background-color are applied to maintain consistency and
+                    improve readability.</p>
+                <h3>Accessibility</h3>
+                <p>The page uses semantic HTML tags like header, nav, main, section, and footer to improve structure and
+                    navigation for assistive technologies. All images include alt attributes to provide descriptive text
+                    for screen readers. The aria-label attribute is used for interactive elements like the "Go to Top"
+                    button to enhance accessibility. Keyboard navigation is ensured for all interactive elements, and
+                    sufficient color contrast is maintained to improve readability for users with visual impairments.
+                </p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to
+                    jump to the corresponding section of the validation page.</p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+
+                <h3>Link to the page</h3>
+                <p><a href="content.html">Include a link to the actual page you describe.</a></p>
             </section>
 
             <section>
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                <p>During the implementation, I encountered issues with how different browsers rendered certain CSS properties. To resolve this, I used vendor prefixes and tested the page across multiple browsers to ensure consistent appearance and functionality.  It's crucial to test web pages on various browsers and devices early in the development process to identify and address compatibility issues.</p>
+                <p> Creating a layout that adapts well to different screen sizes was challenging. I utilized Flexbox and Grid Layout along with media queries to create a responsive design that works on both desktop and mobile devices.  Responsive design requires careful planning and testing. Using modern CSS techniques like Flexbox and Grid can simplify the process and improve the overall user experience.</p>
+                <p>Ensuring the page was accessible to all users, including those with disabilities, required adding alt attributes to images.  Accessibility should be a priority from the start. Regularly testing with accessibility tools can help identify and fix issues early, making the web page more inclusive.</p>
             </section>
 
             <section>
                 <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+                <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
+                    publication. This includes demonstrating your understanding and application of these regulations. Be
+                    realistic and truthful.</p>
 
-                    
+
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                    <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-                    </ul>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
+                    style). For example:<br><br>
+                <ul class="ref">
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last
+                        accessed: 11 Feb 2025).</li>
+                    <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
+                            Indianappolis.</i></li>
+                </ul>
             </section>
 
             <p class="top"><a href="#top">Go top</a></p>
@@ -102,33 +175,33 @@
         <aside>
             <h3>Core pages developed:</h3>
 
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
             <ul class="top-level-ul">
                 <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <li>Student 1</li>
-                    <ul> 
-                        <li><a href="#splash">Splash page</a></li>
-                        <li><a href="#volunteer">Volunteer page</a></li>
-                        <li><a href="#content">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#splash">Splash page</a></li>
+                    <li><a href="#volunteer">Volunteer page</a></li>
+                    <li><a href="#content">Content page</a></li>
+                </ul>
                 <li>Student 2</li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">Home page </a></li>
+                    <li><a href="#">Table page</a></li>
+                    <li><a href="#">Content page</a></li>
+                </ul>
                 <li>Student 3</li>
-                    <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">Feedback page</a> </li>
+                    <li><a href="#">Team page</a></li>
+                    <li><a href="#">Content page</a></li>
+                </ul>
                 <li>Student 4</li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">Profile page </a></li>
+                    <li><a href="#">Sitemap page</a></li>
+                    <li><a href="#">Content page</a></li>
+                </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
                 <li><a href="#ref">References</a></li>
@@ -140,4 +213,5 @@
         <p>Replace the footer with your teams' website footer</p>
     </footer>
 </body>
+
 </html>
