@@ -212,26 +212,9 @@ img {
 
 .image-container {
   margin-bottom: 2rem;
+  align-items: middle;
 }
 
-/* Lists */
-ul, ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-.compact-list {
-  margin-left: 1.5rem;
-  margin-bottom: 0;
-}
-
-.compact-list li {
-  margin-bottom: 0.25rem;
-}
 
 /* Solutions Section */
 .solutions-container {
@@ -249,23 +232,3 @@ li {
   margin-top: 2rem;
 }
 
-/* Footer */
-footer {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-footer a {
-  color: #93c5fd;
-  transition: color 0.2s;
-}
-
-footer a:hover {
-  color: white;
-}
-
-.footer-links {
-  margin-top: 1rem;
-}
